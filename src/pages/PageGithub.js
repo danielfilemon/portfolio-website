@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useCustomData } from "../utils/CustomData";
 import { Link } from "react-router-dom";
 import { AiFillStar } from "react-icons/ai";
 import { BiGitRepoForked } from "react-icons/bi";
@@ -6,8 +7,10 @@ import { BiGitRepoForked } from "react-icons/bi";
 export default function PageDisplayGithub() {
   const [repo, setRepo] = useState([]);
 
+  const customData = useCustomData();
+
   useEffect(() => {
-    fetch("https://api.github.com/users/sarahcssiqueira/repos")
+    fetch(customData.apiToConsume.github)
       .then((res) => res.json())
       .then((res) => {
         setRepo(res);
@@ -18,13 +21,7 @@ export default function PageDisplayGithub() {
     <>
       <main className="page">
         <h2 className="page_title">Code Samples</h2>
-        <p>
-          Used for millions of developers around the globe, GitHub does not
-          require a presentation. As an open source enthusiast, I use GitHub,
-          among other things, to share some code samples that can be useful for
-          other devs. Below you can see my public GitHub repositories. If some
-          of them are useful for you, please consider leaving a star.
-        </p>
+        <p>{customData.gitHubPageDesc}</p>
 
         <section className="grid">
           {repo.map((repo) => {

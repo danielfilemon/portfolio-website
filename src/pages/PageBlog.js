@@ -1,17 +1,15 @@
 import React from "react";
+import { useCustomData } from "../utils/CustomData";
 import PostsList from "../components/PostsList";
 
 export default function PageBlog() {
+  const customData = useCustomData();
+
   return (
     <div>
       <main className="page">
         <h2 className="page_title">Blog</h2>
-        <p>
-          I write content about technology, programming, and sometimes, how I
-          see the world. The main goal is writing for my own future reference
-          (and avoid spending hours "googling" for stuff I forgot), but I also
-          hope something to be useful for other developers.
-        </p>
+        <p>{customData.blogPageDesc}</p>
         <PostsList />
       </main>
     </div>
