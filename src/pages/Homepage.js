@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
+import { useCustomData } from "../utils/CustomData";
 import { Link } from "react-router-dom";
 import profilePic from "../assets/profilepic.png";
 
 export default function Home() {
   const [articles, setArticles] = useState([]);
+  const customData = useCustomData();
 
   useEffect(() => {
-    fetch("https://dev.to/api/articles?username=sarahcssiqueira&per_page=3")
+    fetch(`${customData.apiToConsume.devTo}&per_page=3`)
       .then((res) => res.json())
       .then((res) => {
         setArticles(res);
@@ -17,17 +19,14 @@ export default function Home() {
     <>
       <section className="front">
         <section class="front_content">
-          <p className="front_content">Hi there 👋! I'm Sarah</p>
-          <h1 className="front_featured">Full Stack WordPress Developer</h1>
-          <p className="front_content">
-            Open source enthusiast, since 2015 I work building web applications,
-            WordPress Themes, Gutenberg Blocks, React applications & others.
-          </p>
+          <p className="front_content">Hi there 👋! I'm {customData.name}</p>
+          <h1 className="front_featured">{customData.jobTitle}</h1>
+          <p className="front_content">{customData.shortDescription}</p>
 
           <ul className="front_list">
             <li>
               <i className="fa-solid fa-location-dot"></i>
-              <p>Brazil</p>
+              <p>{customData.basedOn}</p>
             </li>
           </ul>
 
@@ -37,19 +36,19 @@ export default function Home() {
             </button>
 
             <div className="front_icons">
-              <Link to="mailto:sarahcosiqueira@gmail.com">
+              <Link to={`mailto:${customData.socialMedia.email}`}>
                 <i className="fa-solid fa-envelope" />
               </Link>
 
-              <Link to="https://linkedin.com/in/sarahcssiqueira/">
+              <Link to={customData.socialMedia.linkedin}>
                 <i className="fa-brands fa-linkedin-in" />
               </Link>
 
-              <Link to="https://github.com/sarahcssiqueira">
+              <Link to={customData.socialMedia.github}>
                 <i className="fa-brands fa-github" />
               </Link>
 
-              <Link to="https://dev.to/sarahcssiqueira">
+              <Link to={customData.socialMedia.devTo}>
                 <i className="fa-brands fa-dev" />
               </Link>
             </div>

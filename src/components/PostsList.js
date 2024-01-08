@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useCustomData } from "../utils/CustomData";
 
 function PostsList() {
   const [articles, setArticles] = useState([]);
+  const customData = useCustomData();
 
   useEffect(() => {
     const fetchArticles = async () => {
       try {
         const response = await fetch(
-          "https://dev.to/api/articles?username=sarahcssiqueira"
+          customData.apiToConsume.devTo
         );
 
         if (!response.ok) {

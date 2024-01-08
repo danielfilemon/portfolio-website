@@ -1,7 +1,10 @@
 import React from "react";
+import { useCustomData } from "../utils/CustomData";
 import profilePic from "../assets/profilepic.png";
 
 export default function AboutPage() {
+  const customData = useCustomData();
+
   return (
     <>
       <main className="page">
@@ -17,20 +20,9 @@ export default function AboutPage() {
 
         <h2 className="page_title">About</h2>
         <article>
-          <p>Hi! I'm Sarah</p>
+          <p>Hi! I'm {customData.name}</p>
 
-          <p>
-            I am a <b>full stack WordPress developer</b>, building web
-            applications since 2015. Started as a freelancer back in 2015, and
-            later in 2018 I found my startup which I was responsible for IT and
-            sales <b>(sincerely, not sure how is the harder part yet).</b>
-          </p>
-
-          <p>
-            Curiosity: I am a former accountant and eternal physics student, it
-            <b> may seem random </b>
-            but in the end, everything connects.
-          </p>
+          <p>{customData.longDescription}</p>
         </article>
       </main>
     </>
