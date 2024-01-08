@@ -1,0 +1,33 @@
+@import  
+'./utils/reset',
+'./utils/variables',
+'./components/scroll',
+'./components/header',
+'./components/buttons',
+'./components/icons',
+'./components/grid',
+'./components/animation',
+'./components/decor',
+'./components/footer',
+'./pages/front',
+'./pages/singlepost',
+'./pages/page';
+
+* { 
+	margin:0;
+    font-family: $primary-font;
+}
+
+body { 
+	color:$secondary-color;
+	font-size:0.9rem;
+    min-height: 100vh;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+p {
+  text-align:justify;
+}

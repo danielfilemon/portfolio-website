@@ -1,0 +1,115 @@
+.grid {
+    display: grid;
+    grid-template-areas: 
+        'a b c';
+
+    &_item{
+        margin: 0.5rem;
+        padding: 0.5rem;
+        max-width: 100%;
+        border:1px;
+        border-style: solid;
+        border-color: rgb(238, 238, 238);
+        border-radius:0.5rem;
+        background-color: #ffffff;
+        
+        &_img {
+            margin-bottom: 0.5rem;
+            width: 100%;
+            height: auto;
+            border:1em;
+            border-radius:0.5rem;
+        }
+
+        &_title {
+            text-align:justify;
+            line-height: 18px;
+            font-weight: 600;
+            font-size: 1.4em;
+            font-family: $primary-font;
+            color: $main-color;
+        }
+
+        &_content {
+            display: block;
+        }
+
+        &_tags {
+            display: flex;
+            flex-direction: row;
+            justify-content: justify;
+            
+            &_tag {
+                padding: 0.5rem;
+                margin-bottom:0.5rem;
+                font-size: 0.8rem;
+                border-radius: 0.5rem;
+                color: $purple-color;
+                background-color: $purple-light-color;
+            }
+
+            &_date {
+                padding: 0.5rem;
+                text-align: center;
+                font-size: 0.8rem;
+                color: $gray-color;
+            }
+
+            &_likes {
+                text-align: center;
+                font-size: 0.8rem;
+                color: red;
+            }
+
+            &_star {
+                text-align: center;
+                font-size: 1.2rem;
+                color: rgb(201, 154, 0);
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-right: 0.5rem;
+            }
+
+            &_fork {
+                text-align: center;
+                font-size: 1.2rem;
+                color: rgb(100, 100, 100);
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+        }
+
+        &_buttons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            
+        }
+    }
+}
+
+@media only screen and (max-width:$bk-tablet) {
+
+    .grid {
+        display: grid;
+        grid-template-areas: 
+        'a b';
+    }
+
+}
+
+@media only screen and (max-width:$bk-phone) {
+
+    .grid {
+        display: grid;
+        grid-template-areas: 
+        'a'
+        'b ';
+    }
+
+}
+

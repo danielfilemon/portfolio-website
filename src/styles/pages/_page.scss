@@ -1,0 +1,114 @@
+.page {
+    padding: 2rem 4rem 5rem 4rem;
+
+    &_title {
+        display: grid;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        color: $main-color;
+        font-size: 1.5em;
+        font-weight: 600;
+        font-family: $primary-font;
+    }
+    
+    &_title::after {
+        content:'';
+        display: inline-block;
+        position: absolute;
+        right: 35%;
+        background-color:$purple-color; 
+        border-radius: 50%;
+        width:8px;
+        height:8px;
+    } 
+    
+    &_title::before {
+        content:'';
+        display: block;
+        position: absolute;
+        left: 35%;
+        background-color:$extra-color; 
+        border-radius: 50%;
+        width:8px;
+        height:8px;
+    } 
+    
+    &_contact {
+        display: grid;
+        justify-content: center;
+        padding-top: 2rem;
+
+        &_content {
+            color: $purple-color;
+        }
+
+        }
+
+    &_img {
+        border-radius: 50%;
+    }
+
+    & figure {
+        display:grid;
+        justify-content: center;
+
+    }
+
+    & p {
+        font-family: $secondary-font;
+        line-height: 20px;
+        color:$text-color;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        & ul > li {
+            list-style: disc;
+            font-family: $secondary-font;
+            line-height: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width:$bk-phone) {    
+    .page {
+        padding: 2rem 2rem 5rem 2rem;
+    
+        &_title {
+            display: grid;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            color: $main-color;
+            font-size: 1.5em;
+            font-weight: 600;
+            font-family: $primary-font;
+        }
+    
+        &_title::after {
+            content:'';
+            display: inline-block;
+            position: absolute;
+            right: 20%;
+            background-color:$purple-color; 
+            border-radius: 50%;
+            width:8px;
+            height:8px;
+        } 
+        
+        &_title::before {
+            content:'';
+            display: block;
+            position: absolute;
+            left: 20%;
+            background-color:$extra-color; 
+            border-radius: 50%;
+            width:8px;
+            height:8px;
+        }   
+    }
+} 

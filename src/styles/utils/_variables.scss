@@ -1,0 +1,27 @@
+/* Colors */
+
+$main-color: hsl(0%,0%,10%);
+$secondary-color: hsl(0%,0%,90%);
+$accent-color: #ff6da1;
+$purple-color: #5e7bff;
+$purple-light-color: #c1ccff;
+$extra-color: #00e4bc;
+$gray-color: rgb(147, 147, 147);
+$text-color: #3B3C4A;
+$black: hsl(0%,0%,0%);
+$bright-color: #ff6da1;
+
+/* Fonts */
+
+$primary-font: 'Montserrat', sans-serif;
+$secondary-font: 'Open Sans', sans-serif;
+
+/* Breakpoints */
+
+$bk-phone-small: 639px;
+$bk-phone: 767px;
+$bk-tablet: 1023px;
+$bk-desktop-small: 1199px;
+$bk-desktop-medium: 1439px;
+$bk-desktop-large: 1799px;
+$bk-desktop-xlarge: 1919px

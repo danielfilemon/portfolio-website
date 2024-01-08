@@ -1,0 +1,122 @@
+.front {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    padding: 5rem;
+    
+    &_featured {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-weight: 700;
+        font-family: $secondary-font;
+        font-size: 2.5em;
+        color: $extra-color;
+    }
+
+    &_content {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-family: $primary-font;
+        font-kerning: 0.7rem;
+        color: $main-color;
+    }
+
+    &_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        color: $main-color;
+    }
+    & li {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    & i {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        color: $extra-color;
+    }
+
+    &_button {
+        font-weight: 500;
+        border: none;
+        border-radius: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 0.8rem;
+        cursor: pointer;
+        background-color: $purple-color;
+        color: $secondary-color;
+    
+        & a {
+            color: $secondary-color;
+        }
+
+    }
+
+    &_buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &_icons {
+        padding: 0.5rem;
+
+        & i {
+            color: $purple-color;
+            font-size: 1.5rem;
+        }
+    }
+
+    &_posts {
+        padding: 4rem;
+        background-color: #f9f4ff;
+    }
+
+    &_picture {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:$bk-phone) {      
+    .front {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content:space-evenly;
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+        padding: 1.5rem;
+        
+        &_picture {
+            display: flex;
+            align-items: center;
+        }
+
+        &_buttons {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+    &_posts {
+        padding: 2rem;
+        background-color: #f9f4ff;
+        }
+    }
+}

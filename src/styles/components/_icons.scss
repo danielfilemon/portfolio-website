@@ -1,0 +1,79 @@
+.skills-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    font-size: 1.85rem;
+    color: $main-color;
+
+    & i {
+        padding: 0.5rem;
+    }
+}
+
+.skills li {
+    padding-bottom: 1.5rem;
+    border-left: 1px solid $accent-color;
+    position: relative;
+    padding-left: 20px;
+    margin-left: 10px;
+    color: $main-color;
+}
+
+.skills li:last-child {
+    border: 0px;
+    padding-bottom: 0;
+}
+
+.skills li:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: $accent-color;
+    border: 1px solid $extra-color;
+    box-shadow: 3px 3px 0px #bab5f8;
+    box-shadow: 3px 3px 0px #bab5f8;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: 0px;
+}
+
+.contact-icons {
+    color:$purple-color;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.footer-icons {
+    color:$secondary-color;
+    text-align: center;
+    font-size: 1.5rem;
+
+    &:hover{
+        color: $extra-color;
+        transform: scale(1.1);
+    }
+}
+.footer_light-icons {
+    color:$secondary-color;
+    text-align: center;
+    font-size: 1.5rem;
+
+    &:hover{
+        color: $extra-color;
+        transform: scale(1.1);
+    }
+}
+
+
+.back-to-top {
+    color:$secondary-color;
+    font-size: 1.5rem;
+    font-weight:500;
+    position: absolute;
+    right: 1.5em;
+    top: 0.5em;
+    cursor: pointer;
+}

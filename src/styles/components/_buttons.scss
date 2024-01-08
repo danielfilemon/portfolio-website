@@ -1,0 +1,40 @@
+.button-dark {
+    background-color: $extra-color;
+    color: $secondary-color;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    cursor: pointer;
+
+    & a {
+        color: $secondary-color;
+    }
+}
+
+.button-dark:hover {
+    background-color: $secondary-color;
+    color: $extra-color;
+    transform: scale(1.2);
+}
+
+.button-header {
+    background-color: $extra-color;
+    color: $secondary-color;
+    font-weight: 500;
+    justify-content: center;
+    border:5px;
+    border-color: white;
+    border-radius: 1%;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.button-header:hover {
+    background-color: $secondary-color;
+    color: $extra-color;
+}
