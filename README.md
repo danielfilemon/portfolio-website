@@ -12,11 +12,11 @@ This project is a fork of my original **portfolio website** available at [sarahj
 
 ## Usage
 
-Clone (or download) this repository `https://github.com/sarahcssiqueira/portfolio-website`. On the root folder, run `npm install` to install all the needed dependencies, then run `npm start`.
+Clone (or download) this repository `git clone https://github.com/sarahcssiqueira/portfolio-website`. On the root folder, run `npm install` to install all the needed dependencies, then run `npm start`.
 
 ### Display your Content
 
-[TO DO]
+Custom you data at [./utils/CustomData.js](https://github.com/sarahcssiqueira/portfolio-website/blob/main/src/utils/CustomData.js) file
 
 ### Customize Styles - Fonts, Colors
 
