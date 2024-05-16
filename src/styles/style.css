@@ -63,7 +63,7 @@ table {
 
 .scroll-indicator {
   height: 0.7rem;
-  background: radial-gradient(circle, #ff6da1 0%, #00e4bc 100%);
+  background: radial-gradient(circle, #8e1212 0%, #00e4bc 100%);
   width: 0%;
 }
 
