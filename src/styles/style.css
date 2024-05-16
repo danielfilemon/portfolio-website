@@ -86,7 +86,7 @@ table {
   margin-top: 1rem;
   margin-bottom: 1rem;
   margin-left: 0.5rem;
-  color: #00e4bc;
+  color: #1ee400;
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
   font-size: 1.7em;
@@ -124,7 +124,7 @@ table {
 }
 
 .navbar-mobile button {
-  color: #ff6da1;
+  color: #102dc1;
   background-color: #ffffff;
   font-size: 1.5rem;
   font-weight: 500;
@@ -254,7 +254,7 @@ table {
   content: "";
   width: 15px;
   height: 15px;
-  background: #ff6da1;
+  background: #1536dc;
   border: 1px solid #00e4bc;
   box-shadow: 3px 3px 0px #bab5f8;
   box-shadow: 3px 3px 0px #bab5f8;
