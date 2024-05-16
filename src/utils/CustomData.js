@@ -6,22 +6,22 @@ export const useCustomData = () => useContext(CustomData);
 
 export const UserInfo = ({ children }) => {
   const userData = {
-    name: "Jane Doe",
+    name: "Daniel Filemon",
     jobTitle: "Software Engineer",
     shortDescription: "Passionate about coding and creating awesome software.",
     longDescription:
       "Experienced software engineer with a focus on web development and a strong background in JavaScript and React.",
     basedOn: "Brazil",
     socialMedia: {
-      linkedin: "https://www.linkedin.com/in/janedoe",
-      github: "https://github.com/janedoe",
-      twitter: "https://twitter.com/janedoe",
-      devTo: "https://dev.to/janedoe",
-      email: "sarahcosiqueira@gmail.com",
+      linkedin: "https://www.linkedin.com/in/danielfilemon",
+      github: "https://github.com/danielfilemon",
+      twitter: "https://twitter.com/danielffilemon",
+      devTo: "https://dev.to/danielfilemon",
+      email: "danielffilemon@gmail.com",
     },
     apiToConsume: {
-      devTo: "https://dev.to/api/articles?username=sarahcssiqueira",
-      github: "https://api.github.com/users/sarahcssiqueira/repos",
+      devTo: "https://dev.to/api/articles?username=danielfilemon",
+      github: "https://api.github.com/users/danielfilemon/repos",
     },
     gitHubPageDesc:
       "Say something about why you share projects on GitHub (or leave blank)",
