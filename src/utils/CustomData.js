@@ -17,7 +17,7 @@ export const UserInfo = ({ children }) => {
       github: "https://github.com/danielfilemon",
       twitter: "https://twitter.com/danielffilemon",
       devTo: "https://dev.to/danielfilemon",
-      email: "danielffilemon@gmail.com",
+      email: "danielfilemon@yahoo.com",
     },
     apiToConsume: {
       devTo: "https://dev.to/api/articles?username=danielfilemon",
